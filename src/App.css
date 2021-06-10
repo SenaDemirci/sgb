@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.ui.main.container { 
+  margin-top:-15em; 
+  height: 10vmin;
+  background-color: #ffffff;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  
+}
+
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +29,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +40,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+/*
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +53,4 @@
     transform: rotate(360deg);
   }
 }
+*/
