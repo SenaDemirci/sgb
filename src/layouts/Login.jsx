@@ -26,7 +26,7 @@ export default function Login() {
                     // sayfaya git
                     console.log("girdi");
                     history.push('/Home');
-                    alert("Giriş başarılı");
+                    //alert("Giriş başarılı");
 
 
 /*
@@ -78,7 +78,6 @@ export default function Login() {
                 }
                 console.log(response.data.token); //consolda response un değerini yazar
                 console.log(response.data.kullaniciAdi);
-                console.log(response.data.parola);
                 console.log(response.data.durum); //consolda response un değerini yazar
             });
 

@@ -4,10 +4,10 @@ import Navi from './layouts/Navi';
 import 'semantic-ui-css/semantic.min.css'
 import Login from './layouts/Login';
 import React, { useState } from 'react'
-import { Switch, useHistory } from "react-router-dom";
+import { Router, Switch, useHistory } from "react-router-dom";
 import Anasayfa from './layouts/Anasayfa';
 import { Route } from 'react-router-dom';
-import Img from './layouts/Img';
+import BookCard from './layouts/BookCard';
 
 function App() {
   /* 
@@ -39,9 +39,13 @@ function App() {
     <div className="App">
       <Navi />
       <Container className="main">
+
         <Route exact path="/" component={Login} />
-        <Route path="/Navi" component={Navi} />
         <Route path="/Home" component={Anasayfa} />
+         <Route exact path="/BookCard" component={BookCard} /> 
+
+
+
       </Container>
     </div>
 
