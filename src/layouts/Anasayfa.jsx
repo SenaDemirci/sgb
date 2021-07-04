@@ -4,7 +4,7 @@ import { useHistory, Link, Switch, NavLink } from 'react-router-dom';
 import { Menu, MenuItem, Search } from 'semantic-ui-react'
 import { Button, Container, Segment, Input, Grid, Image, Card, Icon, Pagination } from 'semantic-ui-react'
 import BookCard from './BookCard'
-import { Route,Router } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 
 export default function Anasayfa() {
 
@@ -29,39 +29,39 @@ export default function Anasayfa() {
     */
 
     let history = useHistory()
-    
-    const handleBookCard = (movies) => {
-/*
-        history.push({
-            pathname: '/BookCard',
-            state: { movies}
-          })
-*/
 
-          //this.props.history.push('/BookCard');
-//const message = "Hello Everyone";
+    const handleBookCard = (movies) => {
+        /*
+                history.push({
+                    pathname: '/BookCard',
+                    state: { movies}
+                  })
+        */
+
+        //this.props.history.push('/BookCard');
+        //const message = "Hello Everyone";
         //history.push({pathname:'/BookCard'})
 
         //  <BookCard movies={movies}/>     
         //  history.push('/BookCard');
-      
-    //<Anasayfa signOut={history.push('/BookCard')}/>
-  
+
+        //<Anasayfa signOut={history.push('/BookCard')}/>
+
         //console.log(movies);
 
-        
+
         //<Route movies={movies} exact path="/BookCard" component={BookCard} />     
         //<BookCard message="Data from first component"/>
-        
-/*
-        return (
-            <div key={movies.key}>
-                <BookCard adi={movies.adi}/>
-            </div>
-            
-     )
-*/          
-}        
+
+        /*
+                return (
+                    <div key={movies.key}>
+                        <BookCard adi={movies.adi}/>
+                    </div>
+                    
+             )
+        */
+    }
 
     return (
 
@@ -81,7 +81,7 @@ export default function Anasayfa() {
                             onChange={e => setQuery(e.target.value)}
                         />
                         <Button onClick={handleSubmit} content='Search' primary />
-                    
+
                     </Segment>
                 </Menu>
             </Container>
@@ -105,10 +105,10 @@ export default function Anasayfa() {
                                 //indexOf --> aradığımız terim filmin içinde varsa o terimleri döndürür, yoksa -1 döndürür
                          */
 
-//href={movie.kitapURL}
+                        //href={movie.kitapURL}
                         <Grid.Column stretched >
-                            <Card color={"green"}> 
-                            
+                            <Card color={"green"}>
+
                                 <Image src={movie.resimURL} wrapped ui={false} />
                                 <Card.Content textAlign={"center"} style={{
                                     height: "200px",
@@ -128,34 +128,28 @@ export default function Anasayfa() {
                                         <Icon name='thumbs up' />
                                         {movie.rating}
                                     </a>
-
-
                                 </Card.Content>
 
+                                <Link to={{
+                                    pathname: '/BookCard',
+                                    state: {
+                                        movie,
+                                    }
+                                }}>More Info</Link>
 
-{/*                                 
-                                    <Route exact path="/BookCard" component={BookCard} />
-                                    <Link to="/BookCard"></Link> */}
-<li>
-<Link to={{
-    pathname:'/BookCard',
-    state:{
-        movie,
-      }
-}}>More Info</Link>
-</li>
-
-                                    {/* <BookCard signOut={handleBookCard} bisey={movie}/> */}
-                                    {/* <Button as={NavLink} to="/BookCard" onClick={handleBookCard(movie)}> More Info</Button>    */}
-                                    {/* <Button onClick={<BookCard signOut={handleBookCard} bisey={movie}/>}> More Info</Button>  */}
-                                    {/* <Button onClick={handleBookCard(movie)}> More Info</Button>    */}
-                                    {/* <Button onClick={<BookCard bisey={movie}/>}>More Info</Button>  */}
+                                {/* <BookCard signOut={handleBookCard} bisey={movie}/> */}
+                                {/* <Button as={NavLink} to="/BookCard" onClick={handleBookCard(movie)}> More Info</Button>    */}
+                                {/* <Button onClick={<BookCard signOut={handleBookCard} bisey={movie}/>}> More Info</Button>  */}
+                                {/* <Button onClick={handleBookCard(movie)}> More Info</Button>    */}
+                                {/* <Button onClick={<BookCard bisey={movie}/>}>More Info</Button>  */}
 
                             </Card>
+
                         </Grid.Column>
                     ))}
+
                 </Grid.Row>
-                <Pagination defaultActivePage={5} totalPages={10} />
+
             </Grid>
 
         </div>

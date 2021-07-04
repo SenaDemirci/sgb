@@ -24,7 +24,7 @@ export default function Navi() {
         <div>
 
             <Menu fixed="top">
-                <Container>
+                <Container className="main3">
                     <Menu.Item size='massive' style={{ color: 'black' }}  as={NavLink} to="/"
                          name='SGB.net'
                     />
