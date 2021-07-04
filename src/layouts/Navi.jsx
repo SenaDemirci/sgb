@@ -36,12 +36,16 @@ export default function Navi() {
                                 <Flag name='turkey' />
                             </Grid.Column>
                         </Grid>
-                        <Menu.Item>
+                        {/* <Menu.Item>
                             {isAuthenticated ? <Button onClick={handleSignOut} primary> Giriş Yap </Button> : <Button as={NavLink} to="/" onClick={handleSignIn} primary > Çıkış Yap </Button>}
-                        </Menu.Item>
+                        </Menu.Item> */}
                     </Menu.Menu>
                 </Container>
             </Menu>
+
+
+
+            
         </div>
     )
 }

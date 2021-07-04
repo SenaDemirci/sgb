@@ -145,19 +145,12 @@ export default function Anasayfa() {
 }}>More Info</Link>
 </li>
 
-
-{/* <BookCard signOut={handleBookCard} bisey={movie}/> */}
-
-
-
- 
-{/* <Button as={NavLink} to="/BookCard" onClick={handleBookCard(movie)}> More Info</Button>    */}
-
-
+                                    {/* <BookCard signOut={handleBookCard} bisey={movie}/> */}
+                                    {/* <Button as={NavLink} to="/BookCard" onClick={handleBookCard(movie)}> More Info</Button>    */}
                                     {/* <Button onClick={<BookCard signOut={handleBookCard} bisey={movie}/>}> More Info</Button>  */}
-
                                     {/* <Button onClick={handleBookCard(movie)}> More Info</Button>    */}
                                     {/* <Button onClick={<BookCard bisey={movie}/>}>More Info</Button>  */}
+
                             </Card>
                         </Grid.Column>
                     ))}
@@ -166,8 +159,5 @@ export default function Anasayfa() {
             </Grid>
 
         </div>
-
-
-
     );
 }
