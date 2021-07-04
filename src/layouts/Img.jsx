@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { Grid, Card, Icon, Image } from 'semantic-ui-react'
 
 export default function Img(props){
-
-
     return (
         <div>
             <Card>

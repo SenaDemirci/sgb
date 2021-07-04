@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Switch, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { Button, Form, Menu, Segment, Image } from 'semantic-ui-react'
 import { Checkbox } from 'semantic-ui-react'
 import Anasayfa from './Anasayfa'
@@ -28,49 +28,6 @@ export default function Login() {
                     history.push('/Home');
                     //alert("Giriş başarılı");
 
-
-/*
-<Router history={history}>
-  <Route path="/" component={Anasayfa}>
-  </Route>
-</Router>
-*/
-
-/*
-                    function handleSignOut() {
-                        setIsAuthenticated(true) //false ---> Login sayfası gelir
-                    }
-
-                    if (isAuthenticated) {
-                        <Anasayfa signOut={handleSignOut}/>
-                    }
-*/
-                    //  { isAuthenticated ? <Anasayfa signOut={handleSignOut} deger="1" /> : <Login signIn={handleSignIn} /> }
-
-                    //sanki Anasayfanın içinde signOut diye bir fonk. var da o da yukardaki handleSignOut u çağırıyor
-                    /*                  
-                     <nav className="navbar navbar-default">
-                             <div className="container">
-                                 <div className="navbar-header">
-                                     <ul className="nav navbar-nav">
-                                         <li>
-                                             <Link to={"/"}>Anasayfa</Link>
-                                         </li>
-                                     </ul>                  
-                                  </ div>
-                             </div>
-                           </nav>                   
-                    */
-                    /*
-                      <Route >
-                        <Anasayfa />
-                      </Route>
-                      */
-                    //<Link to={`/anasayfa/${Anasayfa}`}>Giriş</Link> 
-                    //<Route path="/" component = {Anasayfa}></Route>
-                    // {isAuthenticated?<GirisYap signOut={handleSignOut} deger="1"/>:<GirisYap signIn={handleSignIn}/>}
-                    // {isAuthenticated <GirisYap signOut={handleSignOut} />}
-                    // <Route exact path="/" component={Anasayfa} />
                 }
                 else {
                     console.log("olmadı");

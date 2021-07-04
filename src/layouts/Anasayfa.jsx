@@ -30,39 +30,6 @@ export default function Anasayfa() {
 
     let history = useHistory()
 
-    const handleBookCard = (movies) => {
-        /*
-                history.push({
-                    pathname: '/BookCard',
-                    state: { movies}
-                  })
-        */
-
-        //this.props.history.push('/BookCard');
-        //const message = "Hello Everyone";
-        //history.push({pathname:'/BookCard'})
-
-        //  <BookCard movies={movies}/>     
-        //  history.push('/BookCard');
-
-        //<Anasayfa signOut={history.push('/BookCard')}/>
-
-        //console.log(movies);
-
-
-        //<Route movies={movies} exact path="/BookCard" component={BookCard} />     
-        //<BookCard message="Data from first component"/>
-
-        /*
-                return (
-                    <div key={movies.key}>
-                        <BookCard adi={movies.adi}/>
-                    </div>
-                    
-             )
-        */
-    }
-
     return (
 
         <div>
@@ -137,11 +104,8 @@ export default function Anasayfa() {
                                     }
                                 }}>More Info</Link>
 
-                                {/* <BookCard signOut={handleBookCard} bisey={movie}/> */}
-                                {/* <Button as={NavLink} to="/BookCard" onClick={handleBookCard(movie)}> More Info</Button>    */}
                                 {/* <Button onClick={<BookCard signOut={handleBookCard} bisey={movie}/>}> More Info</Button>  */}
                                 {/* <Button onClick={handleBookCard(movie)}> More Info</Button>    */}
-                                {/* <Button onClick={<BookCard bisey={movie}/>}>More Info</Button>  */}
 
                             </Card>
 

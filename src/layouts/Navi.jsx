@@ -4,9 +4,6 @@ import { Button, Container, Grid, Menu } from 'semantic-ui-react'
 import { Flag } from 'semantic-ui-react'
 import Anasayfa from './Anasayfa'
 import Lang from './Lang'
-import Login from './Login'
-
-
 
 //export default olanları import ederken süslü parantez kullanılmaz
 export default function Navi() {
@@ -41,11 +38,7 @@ export default function Navi() {
                         </Menu.Item> */}
                     </Menu.Menu>
                 </Container>
-            </Menu>
-
-
-
-            
+            </Menu>          
         </div>
     )
 }

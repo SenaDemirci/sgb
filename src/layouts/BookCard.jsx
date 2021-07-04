@@ -4,7 +4,7 @@ import Img from './Img'
 import { useHistory, useLocation } from 'react-router-dom';
 
 export default function BookCard(props) {
-    var i = 0;
+
     console.log(props.location.state.movie.yazarlar)
 
     return (
@@ -28,8 +28,6 @@ export default function BookCard(props) {
                             <Button icon='download' />
                         </Button.Group>
 
-
-
                     </Grid.Column>
 
                     <Grid.Column color={'white'}>
@@ -38,15 +36,17 @@ export default function BookCard(props) {
                         </p>
 
                         <p style={{ fontWeight: 'bold', color: 'grey ', fontSize: '1.2em' }}>
+                            <Icon name=' book' />
                             Sayfa sayısı:   {props.location.state.movie.sayfaSayisi}
                         </p>
 
-                        <p>
+                        <p style={{ fontWeight: 'bold', color: 'black ', marginTop: '2em' }}>
+                            <Icon name='pencil alternate' />
                             Yazarlar:
                         </p>
                         {props.location.state.movie.yazarlar.map((yazarlar, i) => {
                             return (
-                                <p>
+                                <p style={{ fontWeight: 'bold', color: 'grey ', marginTop: '2em' }}>
                                     {props.location.state.movie.yazarlar[i].adi}
                                 </p>
                             )
